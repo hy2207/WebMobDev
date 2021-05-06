@@ -1,0 +1,7 @@
+[{"id":1,"first_name":"Joshuah","last_name":"Featenby", 
+  "favnumbers" : [1,2,10]
+},
+{"id":2,"first_name":"Willetta","last_name":"Deverille", "favnumbers" : [11,20,100, 30]},
+{"id":3,"first_name":"Mervin","last_name":"Bolter", "favnumbers" : [1,21]},
+{"id":4,"first_name":"Franzen","last_name":"Gomersal", "favnumbers" : [12,30]},
+{"id":5,"first_name":"Gayle","last_name":"Scirman","favnumbers" : [100]}]

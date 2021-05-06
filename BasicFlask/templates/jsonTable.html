@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+
+<html> 
+	<head> 
+		<title>For loop in Flask</title> 
+
+	
+		<!-- Adding some style to table (OPTIONAL) -->
+		<style type="text/css"> 
+			
+			th:tr{ 
+				color: blue; 
+		
+			} 
+			tr:nth-of-type(2n){ 
+				border: 1px solid black; 
+				background-color: rgba(150, 150, 150, 0.5); 
+		
+			} 
+		
+			td{ 
+				padding: 8px 8px; 
+				border: 1px solid black; 
+			} 
+		</style> 
+	</head>
+	<body> 
+	
+		<table> 
+			<!-- Table headers -->
+			
+			<th> 
+				<tr style="color: green; ">	 
+					<td>id</td> 
+					<td>name</td> 
+					<td>Favourite Numbers</td>
+				</tr> 
+			</th> 
+			
+			
+			{%for i in range(0, n)%} 
+			
+			<!-- table rows -->
+				<tr> 
+					<td>{{theData[i]['id']}}</td> 
+					<td>{{theData[i]['last_name']}}, {{theData[i]['first_name']}}</td>
+					<td>{{theData[i]['favnumbers']}}, ** {{theData[i]['favnumbers'][0]}}</td>
+					<td>
+						<ul>
+							{%for i in theData[i]['favnumbers']%} 
+								<li>{{i}}</li>
+							{%endfor%} 
+						</ul>
+						
+					</td>
+					
+			
+			{%endfor%} 
+			
+			</tr> 
+		
+		</table> 
+	
+	
+	</body> 
+</html> 

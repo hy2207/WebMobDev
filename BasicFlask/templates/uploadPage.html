@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+
+<html> 
+	<head> 
+		<title>Upload Page</title> 
+
+	
+		<!-- Adding some style to table (OPTIONAL) -->
+		<style type="text/css"> 
+			
+			th:tr{ 
+				color: blue; 
+		
+			} 
+			tr:nth-of-type(2n){ 
+				border: 1px solid black; 
+				background-color: rgba(150, 150, 150, 0.5); 
+		
+			} 
+		
+			td{ 
+				padding: 8px 8px; 
+				border: 1px solid black; 
+			} 
+		</style> 
+	</head>
+	<body>
+		{% for message in get_flashed_messages() %}
+			<h4>{{ message }}</h4>
+		{% endfor %}
+	  <form action="processUpload" method="POST" enctype="multipart/form-data">
+      <table>
+        <tr>
+          <td><label for="url">File</label></td><td><input type="file" name="file" value="" ></td>
+        </tr>
+      </table>
+      
+      
+      <br>
+      <input type="submit" value="Upload now">
+  </form>
+
+	</body>
+</html>
